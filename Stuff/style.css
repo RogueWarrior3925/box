@@ -1,0 +1,52 @@
+div {
+    width: 320px;
+    height: 50px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make footer stick to the bottom */
+}
+
+.header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex: 1; /* Take available space */
+}
+
+.sidebar {
+    width: 250px;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.content {
+    flex: 1; /* Take up remaining space */
+    padding: 20px;
+    background: white;
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
