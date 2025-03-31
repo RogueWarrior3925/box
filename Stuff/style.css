@@ -1,52 +1,69 @@
-div {
-    width: 320px;
-    height: 50px;
-    padding: 10px;
-    border: 5px solid gray;
-    margin: 0;
-  }
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+.title{
+    border-style: ridge;
+    border-width: medium;
+    text-align: center;
+    background-color: rgb(179, 24, 24)  ;
+    border-color: rgb(84, 7, 7);
+    
 }
-
-.container {
+.right{
+    flex:1;
+    border-style: ridge;
+    background-color: darkgray;
+    border-color: black;
+ text-align: center;
+ font-size: 30px;
+ align-content: center;
+}
+.faces{
+    flex:5;
+ 
+}
+.holder{
     display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Make footer stick to the bottom */
+}
+.caption{
+    width:300px;
+    border-style: none;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin:auto;
+    display: inline-block;
+    height: 300px;
+    text-align: 300px;
+}
+.img{
+    position: absolute;
+    width:300px;
+    border-style: none;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin:auto;
+    display: inline-block;
+    height: 300px;
+    text-align: 300px;
+
 }
 
-.header {
-    background: #333;
-    color: white;
-    padding: 20px;
+.ending{
+    color:rgb(255, 0, 0);
     text-align: center;
 }
-
-.main {
-    display: flex;
-    flex: 1; /* Take available space */
+.sidebox{
+    background-position: right,center;
+    border-style: ridge;
+    text-align: center;
+    background-color: rgb(196, 76, 76);
+    border-color: rgb(99, 0, 0);
+    align-content: right;
+    display: inline-block;
+    width:50px;
+    height:100px;
+    color:rgb(159, 42, 42);
+    margin-left: auto;
+    margin-right: auto;
 }
-
-.sidebar {
-    width: 250px;
-    background: #f4f4f4;
-    padding: 20px;
-}
-
-.content {
-    flex: 1; /* Take up remaining space */
-    padding: 20px;
-    background: white;
-}
-
-@media (max-width: 768px) {
-    .main {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        width: 100%;
-    }
+p1{
+    color:rgb(188, 41, 41);
+   font-size: 30px;
 }
